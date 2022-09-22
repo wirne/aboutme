@@ -1,4 +1,5 @@
 import org.jetbrains.compose.compose
+import org.jetbrains.kotlin.konan.target.buildDistribution
 
 plugins {
     kotlin("multiplatform")
@@ -23,6 +24,10 @@ kotlin {
                     useChromeHeadless()
                     useFirefox()
                 }
+            }
+
+            distribution {
+                directory = file("$projectDir")
             }
         }
         binaries.executable()
