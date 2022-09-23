@@ -27,9 +27,13 @@ private fun RootLayout(content: @Composable () -> Unit) {
     Div(
         attrs = {
             style {
+                backgroundColor(WirneColor.Background)
                 display(DisplayStyle.Flex)
                 justifyContent(JustifyContent.Center)
-                height(100.vh)
+                height(100.percent)
+                overflow("auto")
+                color(WirneColor.White87)
+                fontFamily("sans-serif")
             }
         },
         content = { content() }
@@ -41,12 +45,9 @@ private fun ContentLayout(content: @Composable () -> Unit) {
     Div(
         attrs = {
             style {
-                backgroundColor(WirneColor.Background)
-                overflow("auto")
+                backgroundColor(WirneColor.ContentBackground)
                 padding(32.px)
                 maxWidth(640.px)
-                color(WirneColor.White87)
-                fontFamily("sans-serif")
             }
         },
         content = { content() }
