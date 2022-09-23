@@ -1,7 +1,5 @@
 import androidx.compose.runtime.*
-import component.HeaderWithSelife
-import component.LinkListFooter
-import component.Paragraphs
+import component.*
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
 import org.jetbrains.compose.web.renderComposable
@@ -13,7 +11,12 @@ fun main() {
             ContentLayout {
                 HeaderWithSelife()
                 Paragraphs()
-                LinkListFooter()
+                SectionHeader(text = "Projects")
+                ProjectList()
+                SectionHeader(text = "Competences")
+                Competences()
+                SectionHeader(text = "Contact & links")
+                ContactAndLinksList()
             }
         }
     }
@@ -39,12 +42,10 @@ private fun ContentLayout(content: @Composable () -> Unit) {
         attrs = {
             style {
                 backgroundColor(WirneColor.Background)
-                display(DisplayStyle.Flex)
-                justifyContent(JustifyContent.SpaceBetween)
-                flexDirection(FlexDirection.Column)
                 overflow("auto")
                 padding(32.px)
                 maxWidth(640.px)
+                color(WirneColor.White87)
                 fontFamily("sans-serif")
             }
         },
