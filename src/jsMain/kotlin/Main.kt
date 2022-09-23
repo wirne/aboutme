@@ -42,6 +42,7 @@ private fun ContentLayout(content: @Composable () -> Unit) {
                 display(DisplayStyle.Flex)
                 justifyContent(JustifyContent.SpaceBetween)
                 flexDirection(FlexDirection.Column)
+                overflow("auto")
                 padding(32.px)
                 maxWidth(640.px)
                 fontFamily("sans-serif")

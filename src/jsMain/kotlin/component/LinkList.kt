@@ -35,11 +35,6 @@ fun LinkListFooter() {
             imgSrc = "icons/github.svg",
             text = "Github"
         )
-        LinkListItem(
-            href = "icons/cv.svg",
-            imgSrc = "icons/cv.svg",
-            text = "CV"
-        )
     }
 }
 

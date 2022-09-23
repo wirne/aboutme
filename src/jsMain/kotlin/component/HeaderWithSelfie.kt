@@ -24,6 +24,8 @@ fun HeaderWithSelife() {
             }
         }) {
             Text("Hey, I'm Lukas Wirne.")
+            Br()
+            Text("Senior Android developer from Stockholm, Sweden.")
         }
 
         Img(
