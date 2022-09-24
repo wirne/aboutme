@@ -9,7 +9,7 @@ private const val PHONE_NUMBER = "+46 725 040 474"
 private const val EMAIL = "lukas.wirne@gmail.com"
 
 object ContactAndLinkListDefaults {
-    val Id = "contactAndLinkListId"
+    val Id = "contact"
 }
 
 @Composable
