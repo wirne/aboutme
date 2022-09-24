@@ -10,8 +10,10 @@ fun main() {
         RootLayout {
             ContentLayout {
                 HeaderWithSelife()
-                Paragraphs()
-                SectionHeader(text = "Projects")
+                AboutMe()
+                SectionHeader(text = "Status")
+                Status()
+                SectionHeader(text = "Apps I have worked on")
                 ProjectList()
                 SectionHeader(text = "Competences")
                 Competences()

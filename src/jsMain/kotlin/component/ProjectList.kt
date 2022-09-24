@@ -26,6 +26,11 @@ fun ProjectList() {
             projectName = "Systembolaget - Sök & hitta",
             imgSrc = "images/systembolaget.png"
         )
+        LiSpacer()
+        ProjectListItem(
+            projectName = "Praktikertjänst - Mitt PTJ",
+            imgSrc = "images/praktikertjanst.png"
+        )
     }
 }
 
