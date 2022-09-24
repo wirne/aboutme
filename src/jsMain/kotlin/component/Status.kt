@@ -35,7 +35,7 @@ fun Status() {
             },
             href = "#${ContactAndLinkListDefaults.Id}"
         ) {
-            Text("contact\u0010me")
+            Text("contact\u00A0me")
         }
 
         Text(" if you are in need of help with your Android app!")
