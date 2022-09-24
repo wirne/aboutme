@@ -18,7 +18,7 @@ fun main() {
                 SectionHeader(text = "Competences")
                 Competences()
                 SectionHeader(text = "Contact & links")
-                ContactAndLinksList()
+                ContactAndLinkList()
             }
         }
     }

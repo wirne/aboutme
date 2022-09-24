@@ -8,8 +8,12 @@ import style.WirneColor
 private const val PHONE_NUMBER = "+46 725 040 474"
 private const val EMAIL = "lukas.wirne@gmail.com"
 
+object ContactAndLinkListDefaults {
+    val Id = "contactAndLinkListId"
+}
+
 @Composable
-fun ContactAndLinksList() {
+fun ContactAndLinkList() {
     WirneUl {
         ListItem(
             href = "tel:$PHONE_NUMBER",
@@ -41,6 +45,7 @@ private fun ListItem(
         A(
             href = href,
             attrs = {
+                id(ContactAndLinkListDefaults.Id)
                 style {
                     textDecoration("none")
                     color(WirneColor.White87)
