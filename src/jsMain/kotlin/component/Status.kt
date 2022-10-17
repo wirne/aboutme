@@ -12,12 +12,16 @@ fun Status() {
     P(
         attrs = {
             style {
-                color(WirneColor.AndroidGreen)
+                color(WirneColor.NotAvailable)
             }
         }
     ) {
-        Text("Available from November 17th!")
+        Text("Currently on an assignment")
     }
+}
+
+@Composable
+private fun AvailableStatusDescription() {
     P {
         Text(
             """
