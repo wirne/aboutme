@@ -8,6 +8,11 @@ import org.jetbrains.compose.web.dom.*
 fun ProjectList() {
     WirneUl {
         ProjectListItem(
+            projectName = "Marginalen Bank",
+            imgSrc = "images/marginalen.png"
+        )
+        LiSpacer()
+        ProjectListItem(
             projectName = "SBAB",
             imgSrc = "images/sbab.png"
         )

@@ -12,12 +12,14 @@ fun Status() {
     P(
         attrs = {
             style {
-                color(WirneColor.NotAvailable)
+                color(WirneColor.AndroidGreen)
             }
         }
     ) {
-        Text("Currently on an assignment")
+        //Text("Currently on an assignment")
+        Text("Available for new assignments!")
     }
+    AvailableStatusDescription()
 }
 
 @Composable
@@ -25,7 +27,7 @@ private fun AvailableStatusDescription() {
     P {
         Text(
             """
-                My current adventure at Netlight consulting will soon come to an end. 
+                My current adventure at Marginalen Bank will soon come to an end. 
                 Now I'm looking for new adventures as a freelance consultant. 
                 Feel free to 
             """.trimIndent()
