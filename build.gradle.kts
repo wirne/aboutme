@@ -27,7 +27,7 @@ kotlin {
             }
 
             distribution {
-                directory = file("$projectDir")
+                outputDirectory.set(file("$projectDir"))
             }
         }
         binaries.executable()
@@ -35,7 +35,7 @@ kotlin {
     sourceSets {
         val jsMain by getting {
             dependencies {
-                implementation(compose.web.core)
+                implementation(compose.html.core)
                 implementation(compose.runtime)
             }
         }
